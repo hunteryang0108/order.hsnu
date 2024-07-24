@@ -1,0 +1,117 @@
+.dish-edit {
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333333;
+}
+
+.image-input {
+  display: none;
+}
+
+.image-preview {
+  height: 18rem;
+  width: 18rem;
+  object-fit: cover;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  border: .3rem solid;
+  border-color: #007bFF;
+  border-radius: .8rem;
+  user-select: none;
+}
+
+.name {
+  font-size: 1.8rem;
+  margin-top: .5rem;
+  margin-bottom: 1rem;
+  width: 18rem;
+  max-width: 80vw;
+  text-align: center;
+  border: 0;
+  border-bottom: .15rem solid;
+  border-color: #5599FF;
+  border-radius: .1rem;
+  transition: .1s ease-in-out;
+}
+
+.name::placeholder {
+  font-size: 1.5rem;
+}
+
+.name:focus {
+  outline: none;
+  border-color: #007bFF;
+}
+
+.price {
+  font-size: 1.8rem;
+  margin-bottom: .5rem;
+  margin-bottom: 1rem;
+  width: 4rem;
+  max-width: 80vw;
+  text-align: center;
+  color: #D70F64;
+  border: 0;
+  border-bottom: .15rem solid;
+  border-color: #D7558E;
+  border-radius: .1rem;
+  transition: .1s ease-in-out;
+}
+
+.price:focus {
+  outline: none;
+  border-color: #D70F64;
+}
+
+.price-symbol {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #D70F64;
+}
+
+.subtitle {
+  font-size: 2rem;
+  color: #333333;
+}
+
+.save {
+  font-size: 1.2rem;
+  width: 5rem;
+  height: 2rem;
+  margin-top: .5rem;
+  color: #FFFFFF;
+  background-color: #007bFF;
+  border: 0;
+  border-radius: .2rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.entry {
+  font-size: 1.2rem;
+  color: #333333;
+  width: 30rem;
+  max-width: 80vw;
+  height: 5rem;
+  resize: none;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  border: .15rem solid;
+  border-color: #5599FF;
+  border-radius: .4rem;
+  white-space: pre-line;
+  word-break: break-word;
+  user-select: none;
+  transition: .1s ease-in-out;
+}
+
+.entry:focus {
+  outline: none;
+  border-color: #007bFF;
+}
+

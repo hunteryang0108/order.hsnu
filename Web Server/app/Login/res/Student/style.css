@@ -1,0 +1,39 @@
+.login {
+  display: flex;
+  width: 20rem;
+  height: 5rem;
+  max-width: 85vw;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2.5rem;
+  position: absolute;
+  transform: translateY(-50%);
+  background-color: #4285F4;
+  box-shadow: 0 0 .3rem rgba(0, 0, 0, .5);
+  border-radius: .3rem;
+  vertical-align: middle;
+  align-items:center;
+  user-select: none;
+}
+
+.login .icon {
+  width: 4.5rem;
+  margin-left: .25rem;
+  margin-right: .25rem;
+  background-color: #FFFFFF;
+  border-radius: .2rem;
+}
+
+.login .title {
+  font-size: 2.5rem;
+  line-height: 5rem;
+  color: #FFFFFF;
+  margin-left: .5rem;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+}

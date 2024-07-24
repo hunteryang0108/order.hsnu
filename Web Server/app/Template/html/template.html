@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="zh-Hant-TW">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="提供附中學生線上訂購餐點">
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="HSNU 線上訂餐系統" />
+    <meta property="og:title" content="HSNU 線上訂餐系統" />
+    <meta property="og:description" content="提供附中學生線上訂購餐點" />
+    <meta property="og:image" content="/res/Template/icon.png" />
+
+    <title>HSNU 線上訂餐系統</title>
+
+    <link rel="stylesheet" type="text/css" href="/res/Template/style.css">
+    {style}
+    <script src="/res/Template/script.js"></script>
+    {script}
+
+  </head>
+
+  <body>
+
+    <nav class="navbar">
+      <button id="sidenav-toggler" class="toggler">
+        <img src="/res/Template/bar.svg" class="icon">
+      </button>
+      <span class="navbar-logo">
+        <a href="/">
+          <img src="/res/Template/logo.png" alt="HSNU線上訂餐系統" class="logo">
+        </a>
+      </span>
+      <button id="cart-toggler" class="toggler">
+        <img src="/res/Template/cart.svg" class="icon">
+      </button>
+    </nav>
+
+    <div id="content" class="content">
+      {content}
+    </div>
+
+    <div id="sidenav" class="sidebar sidenav hidden">
+      <a href="/Menu">
+        <div class="sidenav-link">
+          <img src="/res/Template/option-cart.svg" class="icon">
+          <span class="sidenav-option">訂 餐</span>
+        </div>
+      </a>
+      <a href="/Login/Student">
+        <div class="sidenav-link">
+          <img src="/res/Template/account.svg" class="icon">
+          <span class="sidenav-option">登 入</span>
+        </div>
+      </a>
+      <a href="/Logout">
+        <div class="sidenav-link">
+          <img src="/res/Template/account.svg" class="icon">
+          <span class="sidenav-option">登 出</span>
+        </div>
+      </a>
+      <div class="beta">BETA 0.3</div>
+    </div>
+    
+    <div id="cart" class="sidebar cart hidden"></div>
+    <div id="overlay" class="overlay hidden"></div>
+
+  </body>
+
+</html>

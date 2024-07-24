@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+/*
+.bulletin {
+  display: none!important;
+}
+
+.optionbar {
+  display: none!important;
+}
+*/
+#cart-toggler {
+  visibility: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans TC', sans-serif;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+div {
+  display: block;
+}
+
+span {
+  display: inline-block;
+}
+
+button {
+  font-family: inherit;
+}
+
+input {
+  font-family: inherit;
+}
+
+textarea {
+  font-family: inherit;
+}
+
+.navbar {
+  display: inline-flex;
+  width: 95vw;
+  position: fixed;
+  z-index: 8;
+  top: 1.5%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: .5rem .8rem;
+  background-color: #007bFF;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+  border-radius: 10px;
+  transition: .3s ease-in-out;
+}
+
+.navbar-logo {
+  margin: 0 auto;
+}
+
+.navbar-logo .logo {
+  width: 10rem;
+  user-select: none;
+}
+
+.toggler {
+  padding: 1rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+}
+
+.toggler .icon {
+  width: 1.5rem;
+}
+
+.content {
+  opacity: 1;
+  visibility: visible;
+  margin-top: 7rem;
+  transition: .2s ease-in-out;
+}
+
+.content.hidden {
+  opacity: 0;
+  visibility: collapse;
+}
+
+.sidebar {
+  opacity: 3;
+  width: 70%;
+  height: 100%;
+  max-width: 300px;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  background-color: #FFFFFF;
+  transition: .3s ease-in-out;
+}
+
+.sidebar.sidenav {
+  left: 0;
+}
+
+.sidebar.cart {
+  right: 0;
+}
+
+.sidenav.hidden {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.sidenav-link {
+  margin: .2rem .4rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  transition: .3s ease-in-out;
+}
+
+.sidenav-link.active {
+  background-color: #F0F0F0;
+}
+
+.sidenav-link:hover {
+  background-color: #F0F0F0;
+}
+
+.sidenav-option {
+  font-size: 1.2rem;
+  color: #202020;
+  height: 2rem;
+  line-height: 2rem;
+  margin-left: 2rem;
+  vertical-align: middle;
+}
+
+.sidenav .icon {
+  width: 1.5rem;
+}
+
+.cart.hidden {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.overlay {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,.5);
+  transition: opacity .2s ease-in-out, visibility .2s ease-in-out;
+  user-select: none;
+}
+
+.overlay.hidden {
+  opacity: 0;
+  visibility: collapse;
+}
+
+.beta {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: .15rem;
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+    color: #BBBBBB;
+    transform: scaleY(.8);
+    text-align: center;
+    margin-bottom: 25px;
+}
